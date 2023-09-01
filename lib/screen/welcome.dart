@@ -1,0 +1,54 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class Welcome extends StatefulWidget {
+  const Welcome({Key? key}) : super(key: key);
+
+  @override
+  State<Welcome> createState() => _WelcomeState();
+}
+
+class _WelcomeState extends State<Welcome> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // appBar: AppBar(
+      //   title: Text('Welcome Page'),
+      //   centerTitle: true,
+      // ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ClipOval(
+           child: Image.asset(
+              'images/login.jpg',
+              width: 350.0,
+              height: 530.0,
+            ),
+            ),
+            SizedBox(height: 20.0),
+            Text(
+              ' A hearty welcome to you!',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+            SizedBox(height: 20.0),
+            ElevatedButton(
+              onPressed: () {
+                // Add your button's functionality here
+              },
+              style: ElevatedButton.styleFrom(
+                primary: Colors.red,
+              ),
+                child: Text('Get Started'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
