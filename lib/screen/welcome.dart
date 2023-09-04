@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class Welcome extends StatefulWidget {
   const Welcome({Key? key}) : super(key: key);
 
@@ -39,7 +41,7 @@ class _WelcomeState extends State<Welcome> {
             SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                // Add your button's functionality here
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
               },
               style: ElevatedButton.styleFrom(
                 primary: Colors.red,

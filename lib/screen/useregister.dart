@@ -16,8 +16,10 @@ class _UserregisterState extends State<Userregister> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Registration"),
+        centerTitle: true,
         backgroundColor: Colors.red,
       ),
+
       body: SingleChildScrollView(
         child: Form(
 
@@ -25,12 +27,15 @@ class _UserregisterState extends State<Userregister> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                "REGISTER HERE!",
-                style: TextStyle(color: Colors.black),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "REGISTER HERE!",
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
               SizedBox(
-                height: 20,
+                height: 60,
               ),
               Padding(
                 padding: const EdgeInsets.all(8),
@@ -68,25 +73,12 @@ class _UserregisterState extends State<Userregister> {
                     decoration: InputDecoration(
                       labelText: "pin code",
                       hintText: "Enter Your Pin Code",
-                      prefixIcon: Icon(Icons.person),
+                      prefixIcon: Icon(Icons.location_on),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30)),
                     ),
-                  )),
-              Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: TextFormField(
-
-                    decoration: InputDecoration(
-                      labelText: "Phone number",
-                      hintText: "Phone Number",
-                      prefixIcon: Icon(Icons.lock),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30)),
-                    ),
-                  )
+                  ),
               ),
-
               Padding(
                   padding: const EdgeInsets.all(8),
                   child: TextFormField(
@@ -109,7 +101,7 @@ class _UserregisterState extends State<Userregister> {
                     decoration: InputDecoration(
                       labelText: "phone number",
                       hintText: "phone number",
-                      labelStyle: TextStyle(fontSize: 15,color: Colors.black),
+
                       prefixIcon: Icon(Icons.phone_android),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30)),
@@ -126,7 +118,7 @@ class _UserregisterState extends State<Userregister> {
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50.0)),
-                    primary: Colors.blue,
+                    primary: Colors.red,
                     fixedSize: Size(300, 50)),
                 child: Text(
                   'Register',

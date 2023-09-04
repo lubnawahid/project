@@ -31,16 +31,16 @@ class _RegistrationState extends State<Registration> {
 
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Userregister()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Shopownerregister()));
                       },
 
-                      child:  Container(decoration:BoxDecoration(borderRadius: BorderRadius.circular(40),color: Colors.pink,),
+                      child:  Container(decoration:BoxDecoration(borderRadius: BorderRadius.circular(40),color: Colors.redAccent,),
 
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image.asset("images/travel-agency.png",height: 80,),
-                            Text("Travelagency",style: TextStyle(color: Colors.white,fontSize: 30),)
+                            Image.asset("images/entrepreneur.png",height: 80,),
+                            Text("ShopOwner",style: TextStyle(color: Colors.white,fontSize: 30),)
                           ],
                         ),
                       ),
@@ -49,9 +49,9 @@ class _RegistrationState extends State<Registration> {
 
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Shopownerregister()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Userregister()));
                       },
-                      child: Container(decoration:BoxDecoration(borderRadius: BorderRadius.circular(40),color: Colors.blueAccent,),
+                      child: Container(decoration:BoxDecoration(borderRadius: BorderRadius.circular(40),color: Colors.redAccent,),
 
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
