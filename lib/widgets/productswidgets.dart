@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
+import '../screen/productscreen.dart';
+
 class ProductsWidgets extends StatefulWidget {
   const ProductsWidgets({Key? key}) : super(key: key);
 
@@ -40,7 +42,10 @@ class _ProductsWidgetsState extends State<ProductsWidgets> {
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(context, MaterialPageRoute(builder:(context) => ProductScreen()));
+
+                                },
                                 child:
                                 Image.asset('images/Product${index + 1}.jpg',
                                   height: 250,
