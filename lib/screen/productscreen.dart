@@ -129,7 +129,28 @@ child: Text('Add to cart',
         ),
       ),
     ),
-
+floatingActionButton: InkWell(
+  onTap: (){},
+  child: Container(
+    padding: EdgeInsets.all(20),
+    decoration: BoxDecoration(
+      color: Colors.black,
+      borderRadius: BorderRadius.circular(15),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.black,
+          blurRadius: 4,
+          spreadRadius: 4,
+        )
+      ]
+    ),
+    child: Icon(CupertinoIcons.cart_fill_badge_plus,
+    color: Colors.white,
+    size: 30,
+    ),
+  ),
+),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
